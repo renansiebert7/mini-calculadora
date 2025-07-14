@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(142, 224, 224);
+img {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
-h1, p {
+h1,
+p {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .input {
@@ -24,7 +29,8 @@ h1, p {
     gap: 20px;
 }
 
-#input1, #input2 {
+#input1,
+#input2 {
     border-radius: 20px;
     color: white;
     background-color: black;
@@ -33,7 +39,7 @@ h1, p {
     padding: 15px;
     font-size: 20px;
     text-align: center;
-    border-color: rgb(51, 255, 0);
+    border-color: rgb(166, 0, 0);
 }
 
 .button {
@@ -44,58 +50,83 @@ h1, p {
     gap: 2px;
 }
 
-body{ 
+body {
     margin-top: 200px;
 }
 
-#btnAdicao, #btnSubtracao, #btnMultiplicacao, #btnDivisao {
+#btnAdicao,
+#btnSubtracao,
+#btnMultiplicacao,
+#btnDivisao {
     width: 45px;
     height: 50px;
     background-color: black;
     color: azure;
-    gap: 20px; 
-    border-color: rgb(51, 255, 0);
+    gap: 20px;
+    border-color: rgb(166, 0, 0);
     border-radius: 10px;
 }
 
-.result, .resultado {
+.result,
+.resultado {
     font-size: 30px;
 }
 
-.resultado{
-    color: rgb(255, 0, 0);
+.resultado {
+    color: rgb(0, 0, 0);
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
-    #input1, #input2 {
-        width: 100%; /* Ajusta a largura do input para ocupar 100% da tela em dispositivos menores */
-        max-width: 150px; /* Define uma largura máxima para os inputs */
+
+    #input1,
+    #input2 {
+        width: 100%;
+        /* Ajusta a largura do input para ocupar 100% da tela em dispositivos menores */
+        max-width: 150px;
+        /* Define uma largura máxima para os inputs */
     }
 
     .input {
-        flex-direction: column; /* Alinha os inputs verticalmente */
-        gap: 10px; /* Reduz o espaço entre os elementos */
+        flex-direction: column;
+        /* Alinha os inputs verticalmente */
+        gap: 10px;
+        /* Reduz o espaço entre os elementos */
     }
 
-    #btnAdicao, #btnSubtracao, #btnMultiplicacao, #btnDivisao {
-        width: 50px; /* Ajusta a largura dos botões */
-        height: 50px; /* Aumenta a altura dos botões */
+    #btnAdicao,
+    #btnSubtracao,
+    #btnMultiplicacao,
+    #btnDivisao {
+        width: 50px;
+        /* Ajusta a largura dos botões */
+        height: 50px;
+        /* Aumenta a altura dos botões */
     }
 
-    .result, .resultado {
-        font-size: 24px; /* Reduz o tamanho da fonte nas telas menores */
+    .result,
+    .resultado {
+        font-size: 24px;
+        /* Reduz o tamanho da fonte nas telas menores */
     }
 }
 
 @media (max-width: 480px) {
-    #input1, #input2 {
-        font-size: 18px; /* Reduz o tamanho da fonte nos inputs */
+
+    #input1,
+    #input2 {
+        font-size: 18px;
+        /* Reduz o tamanho da fonte nos inputs */
     }
 
-    #btnAdicao, #btnSubtracao, #btnMultiplicacao, #btnDivisao {
-        width: 50px; /* Ajusta a largura dos botões */
-        height: 50px; /* Aumenta a altura dos botões */
+    #btnAdicao,
+    #btnSubtracao,
+    #btnMultiplicacao,
+    #btnDivisao {
+        width: 50px;
+        /* Ajusta a largura dos botões */
+        height: 50px;
+        /* Aumenta a altura dos botões */
         border-radius: 20px;
     }
 }
