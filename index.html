@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1><b>CALCULADORA RENAN</b></h1>
+
+    <div class="input">
+        <input type="number" id="input1" placeholder="Número 1">
+        <input type="number" id="input2" placeholder="Número 2">
+
+        <div class="button">
+            <button id="btnAdicao" onclick="cliqueinaadição()"> + </button>
+            <button id="btnSubtracao" onclick="cliqueinasubtração()"> - </button>
+            <button id="btnMultiplicacao" onclick="cliqueinamultiplicação()"> x </button>
+            <button id="btnDivisao" onclick="cliqueinadivisão()"> % </button>
+        </div>
+
+    </div>
+
+    <p class="result">Resultado :</p>
+    <b><p class="resultado"></p></b>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
