@@ -30,6 +30,8 @@ O objetivo foi reforçar conceitos de lógica de programação, manipulação do
 - `CSS`
 - `JavaScript`
 
-Imagem do Projeto:
+<u>Imagem do Projeto:</u>
+
+---
 
 <img src="https://github.com/renansiebert7/mini-calculadora/blob/master/read.me%20img.png?raw=true">
