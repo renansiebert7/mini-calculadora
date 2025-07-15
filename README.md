@@ -32,3 +32,4 @@ O objetivo foi reforçar conceitos de lógica de programação, manipulação do
 
 Imagem do Projeto:
 
+<img src="https://github.com/renansiebert7/mini-calculadora/blob/master/read.me%20img.png?raw=true">
