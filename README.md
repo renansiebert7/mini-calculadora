@@ -30,6 +30,8 @@ O objetivo foi reforçar conceitos de lógica de programação, manipulação do
 - `CSS`
 - `JavaScript`
 
+---
+
 <u>Imagem do Projeto:</u>
 
 ---
