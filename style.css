@@ -57,7 +57,7 @@ body {
 #btnAdicao,
 #btnSubtracao,
 #btnMultiplicacao,
-#btnDivisao {
+#btnDivisao, #btnIgual {
     width: 45px;
     height: 50px;
     background-color: black;

@@ -18,17 +18,21 @@
         <input type="number" id="input2" placeholder="Número 2">
 
         <div class="button">
-            <button id="btnAdicao" onclick="cliqueinaadição()"> + </button>
-            <button id="btnSubtracao" onclick="cliqueinasubtração()"> - </button>
-            <button id="btnMultiplicacao" onclick="cliqueinamultiplicação()"> x </button>
-            <button id="btnDivisao" onclick="cliqueinadivisão()"> % </button>
+            <button id="btnAdicao" onclick="escolherOperacao('+')"> + </button>
+            <button id="btnSubtracao" onclick="escolherOperacao('-')"> - </button>
+            <button id="btnMultiplicacao" onclick="escolherOperacao('*')"> x </button>
+            <button id="btnDivisao" onclick="escolherOperacao('/')"> ÷ </button>
+            <button id="btnIgual" onclick="calcular()"> = </button>
         </div>
 
     </div>
 
     <p class="result"><u>Resultado:</u></p>
-    <b><p class="resultado"></p></b>
+    <b>
+        <p class="resultado"></p>
+    </b>
 
     <script src="calculadora.js"></script>
 </body>
+
 </html>

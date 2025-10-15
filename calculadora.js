@@ -1,35 +1,31 @@
-function formatarNumero(numero) {
-    return numero.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+let operacao = null;
+
+function escolherOperacao(op) {
+  operacao = op;
 }
 
-function cliqueinaadição() {
-    const num1 = Number(document.getElementById('input1').value);
-    const num2 = Number(document.getElementById('input2').value);
-    const resultado = num1 + num2;
-    document.querySelector('.resultado').innerText = formatarNumero(resultado);
-}
+function calcular() {
+  const num1 = Number(document.getElementById('input1').value);
+  const num2 = Number(document.getElementById('input2').value);
+  let resultado;
 
-function cliqueinasubtração() {
-    const num1 = Number(document.getElementById('input1').value);
-    const num2 = Number(document.getElementById('input2').value);
-    const resultado = num1 - num2;
-    document.querySelector('.resultado').innerText = formatarNumero(resultado);
-}
+  function formatarNumero(num) {
+    return num.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
 
-function cliqueinamultiplicação() {
-    const num1 = Number(document.getElementById('input1').value);
-    const num2 = Number(document.getElementById('input2').value);
-    const resultado = num1 * num2;
-    document.querySelector('.resultado').innerText = formatarNumero(resultado);
-}
-
-function cliqueinadivisão() {
-    const num1 = Number(document.getElementById('input1').value);
-    const num2 = Number(document.getElementById('input2').value);
+  if (operacao === '+') resultado = num1 + num2;
+  else if (operacao === '-') resultado = num1 - num2;
+  else if (operacao === '*') resultado = num1 * num2;
+  else if (operacao === '/') {
     if (num2 === 0) {
-        document.querySelector('.resultado').innerText = 'Erro: Divisão por zero!';
-    } else {
-        const resultado = num1 / num2;
-        document.querySelector('.resultado').innerText = formatarNumero(resultado);
+      document.querySelector('.resultado').innerText = 'Erro: divisão por zero!';
+      return;
     }
+    resultado = num1 / num2;
+  } else {
+    document.querySelector('.resultado').innerText = 'Escolha uma operação!';
+    return;
+  }
+
+  document.querySelector('.resultado').innerText = formatarNumero(resultado);
 }
